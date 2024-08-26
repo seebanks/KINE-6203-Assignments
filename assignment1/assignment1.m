@@ -44,10 +44,8 @@ averageAnswer = mean(Q3numbers);
 
 % 5. Write some commands that would return a list of all of the available 
 % functions in the image processing toolbox? 
-
-    %matlab.addons.toolbox.installedToolboxes is supposed to return
-    %information about installed toolboxes?
-    %help images?
+ 
+    help images
 
 % 6. On the line below figure, write a command to draw a graph of 
 % x and y. 
@@ -64,15 +62,15 @@ figure
 % this function do and how would you use it?
 
 %
-% Answer: tbl = anova(mdl)
+% Answer: [p,tbl,stats] = anova1(your data set)
 % The statistical test I chose is an ANOVA test. An ANOVA test is used when
-% a researcher wants to test for differences in the mean of the sample
-% by examining variation of individual samples relative to the amount
+% a researcher wants to test for differences in the mean of more than two
+% samples by examining variation of the individual samples relative to the amount
 % of variation there is between the samples. This test could help determine
 % if there are any statistically significant differences between the 
 % sample means of independent groups.
 % This function creates a table from a linear regression model of 
-% the data set. 
+% the data set as well as a box plot of the data set.
 % 
 
 % 8. What are the 2 major types of loops that MATLAB supports? What is the
@@ -109,8 +107,10 @@ S = sum(A, 'omitnan');
 % could play a similar game on Matlab? Write the command that would launch
 % the game if so. 
 
-
-
+xpbombs
+    %Found this command by using ChatGPT to help me reveal how to play
+    %minesweeper on matlab. This command opens an "easter egg" that runs a
+    %minesweeper style game for the user to play.
 
 % 12. Create a variable myAge and assign it the value of your age. Then 
 % create a new variable called ageLessTwo and subtract two from the value of the
@@ -141,12 +141,13 @@ Q14WeightPounds = originalWeightkg*2.20462;
 Q14WeightOunces = originalWeightkg*35.274;
 
 
+
 % 15. Assign a number with a decimal place to an appropriately named variable. Convert the
 % variable to the type int32 and store the result in a new variable (hint: this is known
 % as casting in computer programming). Use whos to check your result. 
 Q15Decimal = 24.7;
 Q15NewDecimal = int32(Q15Decimal);
-
+whos
 
 
 % 16. Create a variable called weightInLBs to store a weight in pounds. Convert this to 
@@ -160,7 +161,7 @@ weightInKgs = weightInLBs/2.20462;
 % Convert this to degrees Celsius (C) using an appropriate 
 % calculation and store the result in a variable cTemp.
 fTemp = 85.9;
-cTemp = (fTemp - 32)/1.8;
+cTemp = (fTemp - 32)* (5/9);
 
 
 
@@ -210,7 +211,7 @@ originalVec = randi([-10,10], 1, 5);
 orginalVecSub3 = originalVec - 3;
 
 % - count how many are positive
-originalVecPositiveNum = originalVec(originalVec>0);
+originalVecPositiveNum = sum(originalVec>0);
 
 % - get the absolute value of each element
 originalVecABsoluteVal = abs(originalVec);
@@ -233,7 +234,7 @@ trapArea = ((trapB1+trapB2)/2)*trapH;
 %The area of a trapezoid is Area =((length of base 1 + length of base 2)/2)*height. In this
 %problem, the variables for base 1, base 2 and trapezoid height are trapB1,
 %trapB2 and trapH respectively. Each variable has been assigned a random
-%variable to generate between the numbers 1-20 each time the code is run.
+%variable (randi) to generate between the numbers 1-20 each time the code is run.
 %The area of your trapizoid can be found under the variable named
 %'trapArea'.
 
@@ -268,9 +269,10 @@ ROI = ((TRevenue - TCost)/TCost)*100;
 
 %%% Enter the code for your program below this line
 
-helpdlg(sprintf('Hello World'))
+fprintf('Hello World')
 
-msgbox('Hello World')
+msgbox('Hello World') %this code will have a 'pop-up' message box on the screen
+
 
 
 %%%%% When you have completed everything, type the following two commands
