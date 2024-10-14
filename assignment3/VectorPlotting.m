@@ -1,8 +1,8 @@
 function [visual] = VectorPlotting(vector1,vector2)
 %This function is used to plot two vectors on a figure. The function
 %requires two inputs -- the two vectors set by the user. The input will be
-%the variable names of the two vectors that the user wants to plot. The
-%output of this function is a figure of a simple 2D line plot of the
+%the variable names the user created for the two vectors that the user wants to plot. The
+%The output of this function will return a figure of a simple 2D line plot of the
 %vector values.
 
 %This function will also display "Vectors Graph" as the title of the

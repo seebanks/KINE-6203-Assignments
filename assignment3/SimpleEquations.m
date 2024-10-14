@@ -1,8 +1,8 @@
 function [OutputSum, OutputDiff, OutputProd, OutputMax] = SimpleEquations(num1,num2)
 
 %For this function, user will input 2 numbers and there will be four outputs. 
-%The Outputs that will be returned are the sum of the numbers, the difference of the numbers, and
-%product of the numbers, and the max number from the input values.
+%The Outputs that will be returned are the sum of the numbers, the difference of the numbers, 
+%the product of the numbers, and the max number from the input values.
 %The first output will be the sum. For this equation, the two numbers will be added together
 %The second output will be for the difference. The second number will be subtracted from the first
 %number.
@@ -18,6 +18,10 @@ OutputSum = num1 + num2;
 OutputDiff = num1 - num2;
 OutputProd = num1 * num2;
 
+%if statement is used so the computer can compare the two inputs. It test
+%to see if the first input is greater than the second input. It will
+%return the first number as the max number. If the second number is larger
+%thant the function will return the second number as the max
 if (num1>num2)
     OutputMax = num1;
 else

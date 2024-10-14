@@ -10,8 +10,8 @@ function [result] = WooHah(num1,num2)
 
 resultSum = num1+num2;
 
-if mod(resultSum,2) ~=0 %the function mod is a built in feature through matlab that looks for a remainder after division. An even number will not have a remainder when divided by 2. 
+if mod(resultSum,2) ~=0 %the function mod is a built in feature through matlab that looks for a remainder after division. An even number will not have a remainder(remainder=0) when divided by 2. 
     result = 'Hah';
 else
-    result = 'Woo';
+    result = 'Woo'; %if there is a remainder after the mod function executes, then this variable will be returned
 end

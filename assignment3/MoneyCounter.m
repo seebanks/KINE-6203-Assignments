@@ -7,7 +7,9 @@ function [TotalMoneyAmount] = MoneyCounter(numQuarter,numDime, numNickle, numPen
 %This function requires the user to input the number of coins in the specific order of
 %1)Quarters, 2)Dimes, 3)Nickles, and 4)Pennies to perform calculations
 %correctly. Each coin is multiplied by its dollar worth: 25cents, 10cents,
-%5cents, and 1cent respectively.
+%5cents, and 1cent respectively. Once the dollar worth is calculated for
+%each coin, each value will be added together to give the total amount of
+%money the user has. 
 
 %Written by: Selina Banks
 %Due Date: 10/16/2024
